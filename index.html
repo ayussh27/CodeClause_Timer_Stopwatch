@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timer and Stopwatch</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>	
+			<div class="navbar">
+				<ul>
+					<li><a href="#" class="active" id="timer-link">Timer</a></li>
+					<li><a href="#" id="stopwatch-link">Stopwatch</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<div class="timer-container" id="timer-container">
+			<h2>Timer</h2>
+			<div class="timer">
+				<div class="timer-display">
+					<span id="timer-hours">00</span>:<span id="timer-minutes">00</span>:<span id="timer-seconds">00</span>
+				</div>
+				<div class="timer-controls">
+					<button id="start-timer">Start</button>
+					<button id="pause-timer">Pause</button>
+					<button id="stop-timer">Reset</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="stopwatch-container" id="stopwatch-container">
+			<h2>Stopwatch</h2>
+			<div class="stopwatch">
+				<div class="stopwatch-display">
+					<span id="stopwatch-hours">00</span>:<span id="stopwatch-minutes">00</span>:<span id="stopwatch-seconds">00</span>:<span id="stopwatch-milliseconds">000</span>
+				</div>
+				<div class="stopwatch-controls">
+					<button id="start-stopwatch">Start</button>
+					<button id="pause-stopwatch">Pause</button>
+					<button id="stop-stopwatch">Reset</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<audio id="alarm-sound">
+		<source src="alarm.mp3" type="audio/mpeg">
+	</audio>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

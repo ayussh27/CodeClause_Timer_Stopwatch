@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+.logo a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar li {
+	margin: 0 10px;
+}
+
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+}
+.navbar a.active {
+	font-weight: bold;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.timer-container,
+.stopwatch-container {
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	width: 400px;
+}
+
+.timer,
+.stopwatch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.timer-display,
+.stopwatch-display {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.timer-controls,
+.stopwatch-controls {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.timer-controls button,
+.stopwatch-controls button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.timer-controls button:hover,
+.stopwatch-controls button:hover {
+	background-color: #666;
+}
+
+.timer-controls button:active,
+.stopwatch-controls button:active {
+	transform: translateY(2px);
+}
+
+.timer-alarm,
+.stopwatch-split {
+	margin-top: 20px;
+}
+
+.timer-alarm button,
+.stopwatch-split button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.timer-alarm button:hover,
+.stopwatch-split button:hover {
+	background-color: #666;
+}
+
+.timer-alarm button:active,
+.stopwatch-split button:active {
+	transform: translateY(2px);
+}
+
+audio {
+	display: none;
+}
